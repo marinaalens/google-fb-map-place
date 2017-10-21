@@ -4,6 +4,7 @@
 
 function trimPlaceName(name) {
     var placeName = name;
+    // this only applies to danish companies - below are company types which are often added to the name on Google - for example "Burger Joint ApS".
     var subStrRemove = ['ApS', 'aps', 'A/S', 'IVS'];
     subStrRemove.forEach(function (s) {
         if (placeName.indexOf(s) >= 0) {
